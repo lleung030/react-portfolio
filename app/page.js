@@ -42,6 +42,14 @@ export default function Home() {
             <Image src={profile} layout='fill' objectFit='cover' />
           </div>
         </section>
+        
+        <section>
+          <div>
+            <h3 className='text-3xl py-1'>Services I offer</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>After graduating as an alumni of Coding Temple, I continued to refine my skills as a Software Engineer by building various web applications. In my time as a software engineer at <span className='text-teal-500'>Volt Equity</span> I implemented AWS S3 to incorporate object storage for storing and retrieving large amounts of data, such as files, images, and videos as part of the backend for production value applications. I took my skills and continued to build modern application clones such as Instagram and ChatGPT using OpenAI. I have gained unique experiences in developing web apps in languages such as Javascript and Typescript as well as leveraged my skills in backends such as SQL, Firebase and GraphQL.</p>
+          </div>
+        </section>
+
       </main>
     </div>
   )
