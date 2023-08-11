@@ -3,7 +3,7 @@ import Head from 'next/head'
 import './globals.css'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillTwitterCircle, AiFillLInkedin, AiFillYoutube, AiFillLinkedin} from 'react-icons/ai'
-
+import profile from '../public/profile.png';
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill className='cursor-pointer text-2xl'/>
               </li>
-              <li><a className='bg-gradient-to-r from-cyan-500 text-white px-4 py-2 border-none rounded-md ml-8' href="#">Resume</a></li>
+              <li><a className='bg-cyan-500 text-white px-4 py-2 border-none rounded-md ml-8' href="#">Resume</a></li>
             </ul>
             
           </nav>
@@ -37,6 +37,9 @@ export default function Home() {
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />
+          </div>
+          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto'>
+            <Image src={profile} layout='fill' objectFit='cover' />
           </div>
         </section>
       </main>
