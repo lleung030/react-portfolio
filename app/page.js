@@ -2,8 +2,19 @@ import Image from 'next/image'
 import Head from 'next/head'
 import './globals.css'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLInkedin, AiFillYoutube, AiFillLinkedin} from 'react-icons/ai'
+import {AiFillTwitterCircle, AiFillLInkedin, AiFillYoutube, AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
 import profile from '../public/profile.png';
+import js from '../public/javascript.png'
+import aws from '../public/aws.png'
+import css from '../public/css.svg'
+import fb from '../public/firebase.png'
+import git from '../public/git.png'
+import html from '../public/html.png'
+import sql from '../public/mySQL.png'
+import postgresql from '../public/postgresql.png'
+import python from '../public/python.png'
+import react from '../public/react.png'
+import tw from '../public/tailwindcss.png'
 
 export default function Home() {
   return (
@@ -37,6 +48,7 @@ export default function Home() {
             <AiFillTwitterCircle />
             <AiFillLinkedin />
             <AiFillYoutube />
+            <AiFillGithub />
           </div>
           <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto'>
             <Image src={profile} layout='fill' objectFit='cover' />
@@ -47,6 +59,19 @@ export default function Home() {
           <div>
             <h3 className='text-3xl py-1'>Services I offer</h3>
             <p className='text-md py-2 leading-8 text-gray-800'>After graduating as an alumni of Coding Temple, I continued to refine my skills as a Software Engineer by building various web applications. In my time as a software engineer at <span className='text-teal-500'>Volt Equity</span> I implemented AWS S3 to incorporate object storage for storing and retrieving large amounts of data, such as files, images, and videos as part of the backend for production value applications. I took my skills and continued to build modern application clones such as Instagram and ChatGPT using OpenAI. I have gained unique experiences in developing web apps in languages such as Javascript and Typescript as well as leveraged my skills in backends such as SQL, Firebase and GraphQL.</p>
+          </div>
+          <div className='grid grid-cols-6 gap-5'>
+            <Image src={js} className='iconCustom' />
+            <Image src={html} className='iconCustom' />
+            <Image src={aws} className='iconCustom' />
+            <Image src={css} className='iconCustom' />
+            <Image src={fb} className='iconCustom' />
+            <Image src={git} className='iconCustom' />
+            <Image src={sql} className='iconCustom' objectContain='fill'/>
+            <Image src={postgresql} className='iconCustom' />
+            <Image src={python} className='iconCustom' />
+            <Image src={react} className='iconCustom' />
+            <Image src={tw} className='iconCustom' />
           </div>
         </section>
 
